@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+{% load static %}
+{% block css_files %}
+    <link rel="stylesheet" href="{% static "css/index.css" %}">
+    <link rel="stylesheet" href="{% static "css/still.css" %}">
+{% endblock css_files %}
+{% block content %}
+
+<form method="POST">
+    {% csrf_token %}
+    <label for="name">Name:</label><br>
+    <input type="text" id='name' name='name' placeholder="name..." required><br>
+    <label for="email">E-Mail:</label><br>
+    <input type="email" id='email' name='email' placeholder="email..." required><br>
+    <label for="message">Message:</label><br>
+    <input type="message" id='message' name='message' placeholder="message..." required><br>
+
+
+    <br><br><input type="submit" value="   SEND" id='submit'>
+</form>
+
+{% endblock %}

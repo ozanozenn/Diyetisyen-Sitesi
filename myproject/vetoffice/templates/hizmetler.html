@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+{% load static %}
+{% block css_files %}
+    <link rel="stylesheet" href="{% static "css/index.css" %}">
+    <link rel="stylesheet" href="{% static "css/still.css" %}">
+{% endblock css_files %}
+{% block content %}
+
+ 
+    <ul>
+        <li>
+            <h2>Yüzyüze Görüşme</h2>
+            <button onclick="yuzyuzeGorus()">Bilgi almak içın tıklayınız</button>  
+        </li>
+   
+        <li>
+            <h2>Kurumsal Beslenme Danışmanlığı</h2>
+            <button onclick="kurumsalBeslenme()">Bilgi almak içın tıklayınız</button>
+        </li>
+ 
+        <li>
+            <h2>Sporcu Beslenme Danışmanlığı</h2>
+            <button onclick="sporcuBeslenme()">Bilgi almak içın tıklayınız</button>
+        </li>
+    </ul>
+<script src="{% static 'js/script.js' %}"></script>
+
+
+{% endblock %}

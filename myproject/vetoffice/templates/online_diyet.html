@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+{% load static %}
+{% block css_files %}
+    <link rel="stylesheet" href="{% static "css/index.css" %}">
+    <link rel="stylesheet" href="{% static "css/still.css" %}">
+{% endblock css_files %}
+{% block content %}
+
+
+<div class="container">
+            <section class="page-center">
+                <h2>Online Diyet</h2>
+                    <p>
+                    Diyet Merkezlerine gitmek için vakit bulamıyor, kontrol günüyle iş programın
+                    uyuşmadığından diyetin aksıyor ya da sevdiğin ve danışmanlık almak istediğin 
+                    Diyetisyen ile aynı şehirde yaşamıyor olabilirsin ve ya izinli olduğun günü
+                    kontrol süreciyle geçirmeyip sevdiklerinle sosyalleşmeyi tercih edebilirsin.
+                    Zayıflama ve ya kilo alma sürecinde daha çok iletişime, sorularına hızlı yanıta ve evde
+                    olamadığın her anda diyetini bozmadan bulunduğun ortamın alternatiflerinden faydalanmaya 
+                    ihtiyaç duyabilirsin.
+
+                    Böyle durumlarda Online diyet hizmeti tam size göre. Size özel ve yaşam şeklinizle 
+                    uyumlu olarak planlanan diyetinizi uygularken Diyetisyeniniz ile Whatsapp destekli 
+                    görüşme sağlayarak kendinizi diyet yaparmış gibi hissetmeden hedeflerinize ulaşabilirsiniz.
+
+                    Her hafta kontrol seansınızda 20-30 dk görüntülü ve ya sesli telefon görüşmesiyle 
+                    haftanızı değerlendirip listenizi birlikte planlıyoruz.
+                    </p>
+            </section>
+ 
+            <div>
+                <section class="page-center">
+                    
+                        <h2>Online Görüşme Talep Edin</h2> 
+                        <button onclick="onlineGorus()">Bilgi almak içın tıklayınız</button>  
+                </section>
+            </div>
+</div>
+{% endblock %}

@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+{% load static %}
+{% block css_files %}
+    <link rel="stylesheet" href="{% static "css/index.css" %}">
+    <link rel="stylesheet" href="{% static "css/still.css" %}">
+{% endblock css_files %}
+
+{% block content %}
+
+
+<div class="container">
+    <section class="page-center">
+        <h2>Sporcu Beslenme Programı</h2>
+         <p>Profesyoneller için beslenme, sosyal bir paylaşım ya da zevk konusu olmaktan ziyade
+            pragmatist bir yerdedir ve çok daha önemlidir. Dünyada hemen hemen tüm profesyoneller beslenme danışmanı
+            ile çalışır ya da kendileri bu alan fazlasıyla hakimdir. 
+            Bedenin ve yapılan sporun gereksinimlerine göre alınması gereken yağ,
+            karbonhidrat ve protein miktarının sporcuya özel olarak belirlenmiş olması gerekir 
+            ki bunun için kişiye özel analizler ve sürekli takip şarttır. Yapılacak antrenmana göre,
+            sporcunun ihtiyacı olan besinin, planlanan öğünlerde alınması, sporcunun tüm fiziksel
+            yeteneklerini maksimumda kullanmasını ve performansının çok daha iyi hale gelmesini sağlar.
+        </p>
+    </section> 
+</div>
+
+
+{% endblock %}

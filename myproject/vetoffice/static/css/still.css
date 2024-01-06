@@ -1,0 +1,147 @@
+/* Genel Sayfa Stili */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-image: url('img/resim.jpg'); /* Sayfa arkaplan resmi */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Verdana', sans-serif;
+    background-attachment: fixed; /* Sayfanın kaydırıldığında arkaplanın sabit kalmasını sağlar */
+}
+
+/* Header Stili */
+header {
+    background-color: #579f42e7; /* Header arkaplan rengi, ihtiyaca göre değiştirilebilir */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Header'ın diğer elemanlar üzerinde olmasını sağlar */
+}
+
+/* Footer Stili */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #579f42e7; /* Footer arkaplan rengi, ihtiyaca göre değiştirilebilir */
+    color: white; /* Footer metin rengi, ihtiyaca göre değiştirilebilir */
+    text-align: center; /* Footer içindeki metinleri merkeze hizalar */
+    padding: 10px; /* Footer içeriğine dış kenar boşluğu ekler, ihtiyaca göre değiştirilebilir */
+}
+
+/* Navigasyon Stili */
+nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 5px 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Hover efekti geçiş süresi */
+}
+
+nav a:hover {
+    background-color: green; /* Hover efekti için yeni arkaplan rengi */
+}
+
+/* Buton Stili */
+button {
+    background-color: #199309;
+    color: #eeebeb;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1fd370; /* Hover efekti için yeni arkaplan rengi */
+}
+
+/* Başlık Stilleri */
+h1, h2 {
+    color: #579f42e7; /* Başlık metin rengi, ihtiyaca göre değiştirilebilir */
+}
+
+h3 {
+    color: #42c95ffa; /* Başlık metin rengi, ihtiyaca göre değiştirilebilir */
+}
+
+h4 {
+    color: rgba(252, 214, 98, 0.895); /* Başlık metin rengi, ihtiyaca göre değiştirilebilir */
+}
+
+/* Paragraf Stili */
+p {
+    color: #333; /* Paragraf metin rengi, ihtiyaca göre değiştirilebilir */
+}
+
+/* Özel Başlık Stili */
+.custom-h1 {
+    font-size: 40px; /* Özel başlık font büyüklüğü */
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Dropdown (açılır menü) Stilleri */
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.279);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #d9d3d3ae;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+/* Logo Stili */
+.logo img {
+    max-height: 80px; /* Maksimum logo yüksekliği */
+}
+
+
+
+
